@@ -1,0 +1,24 @@
+.gris{
+  display: block;
+  width: 200;
+  -webkit-filter: sepia(1);
+  /*completa resto de prefijos]*/
+  filter: grayscale(1);
+}
+
+.invertido{
+  display: block;
+  width: 200;
+  -webkit-filter: sepia(1);
+  /*completa resto de prefijos]*/
+  filter: invert(1);
+}
+
+.saturar{
+  display: block;
+  width: 200;
+  -webkit-filter: sepia(1);
+  /*completa resto de prefijos]*/
+  filter: saturate(50);
+}
+
