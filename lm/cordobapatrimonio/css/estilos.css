@@ -36,3 +36,7 @@ p a {
 }
 
 /* esto es un comentario en css */
+
+.encabezado {
+  border: 1px solid black;
+}
