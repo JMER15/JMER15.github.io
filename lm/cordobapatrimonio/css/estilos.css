@@ -38,5 +38,6 @@ p a {
 /* esto es un comentario en css */
 
 .encabezado {
-  border-radius: 100% solid black;
+  border: 1px solid black;
+  border-radius: 50px;
 }
