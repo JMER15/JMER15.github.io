@@ -27,3 +27,10 @@ background-color: #7986cb;
 p {
 font-family: cursive;
 }
+
+p a {
+  display: inline-block;
+  border: 1px solid;
+  padding: 5px;
+  background-color: #b2dfdb;
+}
