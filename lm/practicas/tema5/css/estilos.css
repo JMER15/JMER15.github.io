@@ -1,6 +1,7 @@
 body {
     color: purple;
     background-color: #d8da3d
-    font-family: Georgia, "Times New Roman",
-           Times, serif;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color: purple;
+    background-color: #d8da3d      
 }
