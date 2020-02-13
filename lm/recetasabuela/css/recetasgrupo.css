@@ -1,2 +1,9 @@
 body  min-width: 992px !important;
 }
+
+:root {
+  --blue: #007bff;
+  --purple: #6f42c1;
+  --red: #dc3545;
+  --orange: #fd7e14;
+  --yellow: #ffc107;
