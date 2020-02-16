@@ -1,0 +1,96 @@
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline-block;
+  border: 5px solid;
+  padding: 10px;
+  background-color: #ff33fb;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+nav {
+  text-align: center;
+}
+
+body {
+background-color: #D133FF;
+}
+
+p {
+font-family: cursive;
+}
+
+li {
+  animation-duration: 5s;
+  animation-name: slidein;
+  font-family: cursive;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+a {
+  animation-duration: 5s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+p a {
+  display: inline-block;
+  border: 1px solid;
+  padding: 5px;
+  background-color: #b2dfdb;
+}
+
+/* esto es un comentario en css */
+
+.encabezado {
+  border: 1px solid black;
+  border-radius: 50px;
+}
+a {
+  width: 100px;
+  height: 100px;
+  background-color: lightblue;
+  animation-name: example;
+  animation-duration: 9s;
+}
+@keyframes example {
+  from {background-color: red;}
+  to {background-color: green;}
+}
+
+li {
+  display: inline-block;
+  border: 1px solid darkgreen;
+  padding: 5px;
+  background-color: lightblue;
+}
