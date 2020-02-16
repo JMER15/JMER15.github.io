@@ -6,13 +6,13 @@ ul {
 
 li {
   display: inline-block;
-  border: 1px solid;
-  padding: 5px;
-  background-color: #b2dfdb;
+  border: 5px solid;
+  padding: 10px;
+  background-color: #ff33fb;
 }
 
 a {
-  color: black;
+  color: white;
   text-decoration: none;
 }
 
@@ -21,12 +21,46 @@ nav {
 }
 
 body {
-background-color: #7986cb;
+background-color: #D133FF;
 }
 
 p {
 font-family: cursive;
-color: purple;
+}
+
+li {
+  animation-duration: 5s;
+  animation-name: slidein;
+  font-family: cursive;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+a {
+  animation-duration: 5s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
 }
 
 p a {
@@ -41,4 +75,22 @@ p a {
 .encabezado {
   border: 1px solid black;
   border-radius: 50px;
+}
+a {
+  width: 100px;
+  height: 100px;
+  background-color: lightblue;
+  animation-name: example;
+  animation-duration: 9s;
+}
+@keyframes example {
+  from {background-color: red;}
+  to {background-color: green;}
+}
+
+li {
+  display: inline-block;
+  border: 1px solid darkgreen;
+  padding: 5px;
+  background-color: lightblue;
 }
