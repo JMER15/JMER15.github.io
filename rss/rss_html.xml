@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<rss>
+  <channel>
+    <title>José Miguel Escribano Ruiz HTML</title>
+    <link>http://jmer15.github.io/</link>
+    <description>Página personal</description>
+      <item>
+        <title>EJERCICIO.1 HTML</title>
+        <link>https://jmer15.github.io/lm/practicas/tema3/actividad1/index.html</link>
+        <description>Actividad 1 tema 3</description>
+      </item>
+
+            <item>
+        <title>EJERCICIO 2. HTML</title>
+        <link>https://jmer15.github.io/lm/practicas/tema3/actividad2/index.html</link>
+        <description>Actividad 2 del tema 3</description>
+      </item>
+
+            <item>
+        <title>EJERCICIO.3 HTML</title>
+        <link>https://jmer15.github.io/lm/practicas/tema3/actividad3/index.html</link>
+        <description>Actividad 3 del tema 3</description>
+      </item>
+  </channel>
+</rss>
