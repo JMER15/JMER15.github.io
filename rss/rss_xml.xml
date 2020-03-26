@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <rss>
   <channel>
-    <title>José Miguel Escribano Ruiz HTML</title>
+    <title>José Miguel Escribano Ruiz XML</title>
     <link>http://jmer15.github.io/</link>
     <description>Página personal</description>
       <item>
@@ -10,12 +10,12 @@
         <description>Actividad 1 tema 7</description>
       </item>
             <item>
-        <title>EJERCICIO 2. HTML</title>
+        <title>EJERCICIO 2. XML</title>
         <link>https://jmer15.github.io/lm/practicas/tema7/clase/ejercicioxhtml2.xml</link>
         <description>Actividad 2 del tema 7</description>
       </item>
             <item>
-        <title>EJERCICIO.3 HTML</title>
+        <title>EJERCICIO.3 XML</title>
         <link>https://jmer15.github.io/lm/practicas/tema7/clase/ejercicioxhtml3.xml</link>
         <description>Actividad 3 del tema 7</description>
       </item>
