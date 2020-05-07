@@ -5,39 +5,9 @@
     <link>http://jmer15.github.io/</link>
     <description>Página personal</description>
       <item>
-        <title>EJERCICIO.1 XML</title>
-        <link>https://jmer15.github.io/lm/practicas/tema7/xml-dtd/bloque1/actividad1/deportistas.xml</link>
+        <title>EJERCICIOS BLOQUE 1 XML</title>
+        <link>https://jmer15.github.io/lm/practicas/tema7/xml-dtd/bloque1.html</link>
         <description>Actividad 1bloque 1 tema 7</description>
-      </item>
-            <item>
-        <title>EJERCICIO 2. XML</title>
-        <link>https://jmer15.github.io/lm/practicas/tema7/xml-dtd/bloque1/actividad2/peliculas.xml</link>
-        <description>Actividad 2 bloque 1 tema 7</description>
-      </item>
-            <item>
-        <title>EJERCICIO.3 XML</title>
-        <link>https://jmer15.github.io/lm/practicas/tema7/xml-dtd/bloque1/actividad3/texto.xml</link>
-        <description>Actividad 3 bloque 1 tema 7</description>
-      </item>
-      <item>
-        <title>EJERCICIO.4 XML</title>
-        <link>https://jmer15.github.io/lm/practicas/tema7/xml-dtd/bloque1/actividad4/infgeografica</link>
-        <description>Actividad 4 bloque1 tema 7</description>
-      </item>
-      <item>
-        <title>EJERCICIO.5 XML</title>
-        <link>https://jmer15.github.io/lm/practicas/tema7/xml-dtd/bloque1/actividad5/programas.xml</link>
-       <description>Actividad 5 bloque1 tema 7</description>
-      </item>
-      <item>
-        <title>EJERCICIO.6 XML</title>
-        <link>https://jmer15.github.io/lm/practicas/tema7/xml-dtd/bloque1/actividad6/mundiales-futbol.xml</link>
-    <description>Actividad 6 bloque1 tema 7</description>
-      </item>
-      <item>
-        <title>EJERCICIO.7 XML</title>
-        <link>https://jmer15.github.io/lm/practicas/tema7/xml-dtd/bloque1/actividad7/medios-transporte.xml</link>
-   <description>Actividad 7 bloque1 tema 7</description>
       </item>
   </channel>
 </rss>
