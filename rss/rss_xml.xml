@@ -4,10 +4,12 @@
     <title>José Miguel Escribano Ruiz XML</title>
     <link>http://jmer15.github.io/</link>
     <description>Página personal</description>
+    
       <item>
         <title>EJERCICIOS BLOQUE 1 XML</title>
         <link>https://jmer15.github.io/lm/practicas/tema7/t7.html</link>
-        <description>Actividad 1bloque 1 tema 7</description>
+        <description>Actividadades Tema 7 DTD</description>
       </item>
+      
   </channel>
 </rss>
