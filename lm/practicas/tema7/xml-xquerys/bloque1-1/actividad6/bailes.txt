@@ -1,0 +1,167 @@
+(:1. Mostrar cada uno de los nombres de los bailes con la etiqueta "losbailes".:)
+
+(:
+for $x in doc("bailes.xml")/bailes/baile
+return
+<losbailes>{$x/nombre/text()}</losbailes>
+:)
+
+(:2. Mostrar los nombres de los bailes seguidos con el número de plazas entre paréntesis, ambos dentro de la misma etiqueta "losbailes".:)
+
+(:
+for $x in doc("bailes.xml")/bailes/baile
+return
+<losbailes>{$x/nombre/text()} ({$x/plazas/text()})</losbailes>
+:)
+
+(:3. Mostrar los nombres de los bailes cuyo precio sea mayor de 30.:)
+
+(:
+for $x in doc("bailes.xml")/bailes/baile
+where $x/precio > 30
+return
+$x/nombre
+:)
+
+(:otra forma:)
+
+(:
+for $baile in doc("bailes.xml")/bailes/baile[precio > 30]
+return $baile/nombre
+:)
+
+(:4. Mostrar los nombres de los bailes cuyo precio sea mayor de 30 y la moneda "euro".:)
+
+(:
+for $x in doc("bailes.xml")/bailes/baile
+where $x/precio > 30 and $x/precio/@moneda = "euro"
+return
+$x/nombre
+:)
+
+(:otra forma:)
+
+(:
+for $baile in doc("bailes.xml")/bailes/baile[precio > 30 and precio/@moneda = "euro"]
+return $baile/nombre
+:)
+
+(:5 Mostrar los nombres y la fecha de comienzo de los bailes que comiencen el mes de enero (utiliza para buscarlo la cadena de texto "/1/").:)
+
+(:
+for $x in doc("bailes.xml")/bailes/baile
+where contains($x/comienzo, "/1/")
+return 
+   <baile>
+      {$x/profesor}
+      {$x/comienzo}
+   </baile>
+:)
+
+(:6. Mostrar los nombres de los profesores y la sala en la que dan clase, ordénalos por sala.:)
+
+(:
+for $x in doc("bailes.xml")/bailes/baile
+order by $x/sala 
+return
+  <baile>
+      {$x/profesor}
+      {$x/comienzo}
+   </baile>
+:)
+
+(: 8. Mostrar los nombres de los profesores eliminando los repetidos y acampañar cada nombre con todas las salas en la que da clase, ordénalos por nombre.:)   
+(:
+ for $x in distinct-values (doc("bailes.xml")/bailes/baile)
+ let $y := doc("bailes.xml")/bailes/baile[profesor=$x]/sala
+ order by $x
+ return 
+ <profesores>
+ <nombre>{$x}</nombre>
+ {$y}
+ </profesores>
+:)
+ 
+(:9. Mostrar la media de los precios de todos los bailes.:) 
+  
+(:
+  let $x := doc("bailes.xml")/bailes/baile
+  return
+  <media>{avg($x/precio)}</media>
+:)
+  
+(:10. Mostrar la suma de los precios de los bailes de la sala 1.:)
+
+(:
+let $x := doc("bailes.xml")/bailes/baile[sala=1]
+ return
+ <total_sala_1>{sum($x/precio)}</total_sala_1>
+:)
+
+
+(:11. Mostrar cuántas plazas en total oferta el profesor "Jesus Lozano".:)
+
+(:
+let $x := doc("bailes.xml")/bailes/baile[profesor = "Jesus Lozano"]
+return
+<plazas>{sum($x/plazas)}</plazas>
+:) 
+ 
+(:12. Mostrar el dinero que ganaría la profesora "Laura Mendiola" si se completaran todas las plazas de su baile, sabiendo que sólo tiene un baile.:)
+
+(:
+let $x := doc("bailes.xml")/bailes/baile[profesor = "Laura Mendiola"]
+return
+$x/plazas * $x/precio
+:)
+
+(:13. Mostrar el dinero que ganaría el profesor "Jesus Lozano" si se completaran todas las plazas de su baile, pero mostrando el beneficio de cada baile por separado.:)
+
+(:
+for $x in doc("bailes.xml")/bailes/baile
+where $x/profesor = "Jesus Lozano"
+return
+<beneficio>{$x/plazas * $x/precio}</beneficio>
+:)
+
+(:14. Mostrar el dinero que ganaría la profesora "Laura" (no conocemos su apellido) si se completaran todas las plazas de su baile.:)
+
+(:
+for $x in  doc("bailes.xml")/bailes/baile
+where starts-with($x/profesor, "Laura")
+return
+<beneficio>{$x/plazas * $x/precio}</beneficio>
+:)
+
+(:15. Mostrar el nombre del baile, su precio y el precio con un descuento del 15% para familias numerosas. Ordenar por el nombre del baile:)
+
+(:
+for $x in  doc("bailes.xml")/bailes/baile
+order by $x/nombre 
+return
+<baile>
+{$x/nombre}
+<precio>{$x/precio}</precio>
+<precio_fam_numerosas>{$x/precio * 0.85}</precio_fam_numerosas>
+</baile>
+:)
+
+(:16. Mostrar todos los datos de cada baile excepto la fecha de comienzo y de fin.:)
+
+(:
+for $x in  doc("bailes.xml")/bailes/baile
+return
+<baile>{$x/* except $x/comienzo except $x/fin}</baile>
+:)
+
+
+(:17. Mostrar en una tabla de HTML los nombres de los bailes y su profesor, cada uno en una fila.:)
+
+(:
+for $x in  doc("bailes.xml")/bailes/baile
+return
+<tr>
+<td>{$x/nombre/text()}</td>
+<td>{$x/profesor/text()}</td>
+</tr>
+:)

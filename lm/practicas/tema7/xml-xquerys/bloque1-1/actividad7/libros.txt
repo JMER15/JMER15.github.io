@@ -1,0 +1,122 @@
+(:1 Listar el título de todos los libros.:)
+
+(:
+for $x in doc("libros.xml")/bib/libro/titulo
+return
+$x
+:)
+
+(:2. Listar año y título de todos los libros, ordenados por el año.:)
+
+(:
+for $x in doc("libros.xml")/bib/libro
+order by $x/@anyo
+return
+<libro>{$x}</libro>
+:)
+
+(:3. Listar los libros cuyo precio sea 65.95:)
+
+(:
+for $x in doc("libros.xml")/bib/libro
+where $x/precio=65.95
+return
+$x
+:)
+
+(:4. Listar los libros publicados antes del año 2000:)
+
+(:
+for $x in doc("libros.xml")/bib/libro
+where $x/@anyo<2000
+return
+$x
+:)
+
+(:5. Listar año y título de los libros publicados por Addison-Wesley después del año 1992.:)
+
+(:
+for $x in doc("libros.xml")/bib/libro
+where $x/@anyo>1992 and $x/editorial="Addison-Wesley"
+return
+<libro>{$x/@anyo}{$x/titulo}</libro>
+:)
+
+(:6. Listar año y título de los libros que tienen más de un autor.:)
+
+(:
+for $x in doc("libros.xml")/bib/libro
+where $x/count(autor)>1
+return
+<libro>{$x/@anyo}{$x/titulo}{$x/autor}</libro>
+:)
+
+(:7. Listar año y título de los libros que no tienen autor.:)
+
+(:
+for $x in doc("libros.xml")/bib/libro
+where empty($x/autor)
+return
+<libro>{$x/@anyo}{$x/titulo}{$x/autor}</libro>
+:)
+
+(:8. Mostrar los apellidos de los autores que aparecen en el documento, sin repeticiones, ordenados alfabéticamente.:)
+
+(:
+for $x in doc("libros.xml")/bib/libro/autor
+order by $x/apellido
+return
+$x/apellido
+:)
+
+(:9. Por cada libro, listar agrupado en un elemento <result> su título y autores:)
+
+(:
+let $x := doc("libros.xml")/bib/libro/titulo
+let $y := doc("libros.xml")/bib/libro/autor
+return
+<result>
+Titulo: {data($x)} ; Autor: {data($y)}
+</result>
+:)
+
+
+(:10. Por cada libro, obtener su título y el número de autores, agrupados en un elemento <libro>:)
+
+(:
+let $x := doc("libros.xml")/bib/libro/titulo
+let $y := doc("libros.xml")/bib/libro/[count(autor)]
+return
+<libro>
+Titulo: {data($x)} ; Autor: {data($y)}
+</libro>
+:)
+
+(:11. Generar un documento html con un encabezado que diga “Listado de libros” seguido de una tabla de 3 columnas, en la que se muestre el título, editorial y precio de cada libro. La tabla deberá tener bordes y la primera fila tendrá un formato especial con los nombres de las columnas. Las columnas de título y editorial irán alineadas a la izquierda, y el precio a la derecha. :)
+
+(:
+<html>
+<body>
+<h1 align="center">Listado de libros</h1>
+<center>
+<table border ="1">
+<tr>
+<th>Titulo</th>
+<th>Editorial</th>
+<th>Precio</th>
+</tr>
+{
+for $x in doc("libros.xml")/bib/libro
+order by $x
+return
+<tr>
+<td>{data($x/titulo)}</td>
+<td>{data($x/editorial)}</td>
+<td>{data($x/precio)}</td>
+</tr>
+}
+</table>
+</center>
+</body>
+</html>
+:)
