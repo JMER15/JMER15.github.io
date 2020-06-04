@@ -1,0 +1,37 @@
+--El siguiente ejemplo selecciona todos los nodos de título:--
+
+/bookstore/book/title/text()
+
+Everyday Italian
+Harry Potter
+XQuery Kick Start
+Learning XML
+
+--El siguiente ejemplo selecciona el título del primer nodo del libro debajo del elemento de la librería:--
+
+/bookstore/book[1]/title/text()
+
+Everyday Italian
+
+--El siguiente ejemplo selecciona el texto de todos los nodos de precios:--
+
+/bookstore/book/price[text()]
+
+30.00
+29.99
+49.99
+39.95
+
+--El siguiente ejemplo selecciona todos los nodos de precios con un precio superior a 35:--
+
+/bookstore/book[price>35]/price
+
+49.99
+39.95
+
+--El siguiente ejemplo selecciona todos los nodos de título con un precio superior a 35:--
+
+/bookstore/book[price>35]/title
+
+XQuery Kick Start
+Learning XML

@@ -1,0 +1,53 @@
+XPath - Ejercicio 2-1 
+Nombre de los módulos que se imparten en el Instituto:
+
+//nombre/text()
+
+Aplicaciones web
+Gestión de bases de datos
+Lenguajes de marcas y sistemas de gestión de información
+Implantación de aplicaciones web
+
+XPath - Ejercicio 2-2
+Nombre de los módulos del ciclo ASIR:
+
+//nombre[../ciclo="ASIR"]/text()
+
+Gestión de bases de datos
+Lenguajes de marcas y sistemas de gestión de información
+Implantación de aplicaciones web
+
+XPath - Ejercicio 2-3 
+Nombre de los módulos que se imparten en el segundo curso de cualquier ciclo:
+
+//nombre[../curso=2]/text()
+
+Aplicaciones web
+Implantación de aplicaciones web
+
+XPath - Ejercicio 2-4 
+Nombre de los módulos de menos de 5 horas semanales:
+
+//nombre[../horasSemanales<5]/text()
+
+Aplicaciones web
+Lenguajes de marcas y sistemas de gestión de información
+
+XPath - Ejercicio 2-5 
+Nombre de los módulos que se imparten en el primer curso de ASIR:
+
+//nombre[../curso=1 and ../ciclo='ASIR']/text()
+
+Gestión de bases de datos
+Lenguajes de marcas y sistemas de gestión de información
+
+XPath - Ejercicio 2-6 
+Horas semanales de los módulos de más de 3 horas semanales (4, 5, 5).
+
+//horasSemanales[.Semanales>3]/text()
+
+4
+5
+5
+
+

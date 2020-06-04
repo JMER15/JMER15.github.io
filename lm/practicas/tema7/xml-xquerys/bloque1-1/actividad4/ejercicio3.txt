@@ -1,0 +1,95 @@
+XPath - Ejercicio 3-1
+Nombre de los módulos del ciclo "Sistemas Microinformáticos y Redes" (en la expresión final no deben aparecer las siglas SMR):
+
+siglas del ciclo "Sistemas Microinformáticos y Redes":
+
+//ciclo[nombre="Sistemas Microinformáticos y Redes"]/@id
+
+módulos del ciclo SMR:
+
+//modulo[ciclo="SMR"]/nombre/text()
+
+sustituyendo la primera en la segunda:
+
+//modulo[ciclo=//ciclo[nombre="Sistemas Microinformáticos y Redes"]/@id]/nombre/text()
+
+Aplicaciones web
+
+XPath - Ejercicio 3-2 
+Nombre de los ciclos que incluyen el módulo "Lenguajes de marcas y sistemas de gestión de información":
+
+siglas de los ciclos que incluyen el módulo "Lenguajes de marcas y sistemas de gestión de información":
+
+//modulo[nombre="Lenguajes de marcas y sistemas de gestión de información"]/ciclo/text()
+
+nombre de los ciclos ASIR o DAW:
+
+//ciclo[@id="ASIR"]/nombre/text()
+
+//ciclo[@id="DAW"]/nombre/text()
+
+sustituyendo la primera en la segunda:
+
+//ciclo[@id=//modulo[nombre="Lenguajes de marcas y sistemas de gestión de información"]/ciclo]/nombre/text()
+
+Administración de Sistemas Informáticos en Red
+Desarrollo de Aplicaciones Web
+
+
+XPath - Ejercicio 3-3 
+Nombre de los módulos de ciclos de Grado Superior:
+
+siglas de los ciclos de grado superior:
+
+//ciclo[grado="Superior"]/@id
+
+módulos de los ciclos ASIR o DAW:
+
+//modulo[ciclo="ASIR"]/nombre/text()
+
+//modulo[ciclo="DAW"]/nombre/text()
+
+sustituyendo la primera en la segunda:
+
+//modulo[ciclo=//ciclo[grado="Superior"]/@id]/nombre/text()
+
+Gestión de bases de datos
+Lenguajes de marcas y sistemas de gestión de información
+Implantación de aplicaciones web
+
+XPath - Ejercicio 3-4 
+Nombre de los módulos de ciclos cuyo título se aprobó en 2008:
+
+siglas de los ciclos cuyo título se aprobó en 2008:
+
+//decretoTitulo[@año=2008]/../@id
+
+módulos del ciclo SMR:
+
+//modulo[ciclo="SMR"]/nombre/text()
+
+sustituyendo la primera en la segunda:
+
+//modulo[ciclo=//decretoTitulo[@año=2008]/../@id]/nombre/text()
+
+Aplicaciones web
+
+XPath - Ejercicio 3-5 - Solución
+Grado de los ciclos con módulos de primer curso:
+
+siglas de los ciclos con módulos de primer curso:
+
+//modulo[curso=1]/ciclo
+
+Grados de los ciclos ASIR o DAW:
+
+//ciclo[@id="ASIR"]/grado/text()
+
+//ciclo[@id="DAW"]/grado/text()
+
+sustituyendo la primera en la segunda:
+
+//ciclo[@id=//modulo[curso=1]/ciclo]/grado/text()
+
+Superior
+Superior

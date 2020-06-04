@@ -1,0 +1,230 @@
+2. Encuentra las expresiones XPath para los siguientes enunciados:
+
+
+1. Nombre de la Universidad:
+
+/universidad/nombre
+
+<nombre>Universidad de Victoria</nombre>
+
+2. Pais de la Universidad:
+
+<pais>España</pais>
+
+<pais>España</pais>
+
+
+3. Nombres de las Carreras:
+
+//carrera/nombre
+
+<nombre>I.T. Informática</nombre>
+<nombre>Dipl. Empresariales</nombre>
+<nombre>Dipl. Relaciones Laborales</nombre>
+<nombre>Lic. Quimica</nombre>
+<nombre>Lic. Biología</nombre>
+<nombre>Lic. Humanidades</nombre>
+
+4. Años de plan de estudio de las carreras:
+
+//carrera/plan
+
+<plan>2003</plan>
+<plan>2001</plan>
+<plan>2001</plan>
+<plan>2003</plan>
+<plan>2001</plan>
+<plan>1980</plan>
+
+5. Nombres de todos los alumnos:
+
+//alumno/nombre
+
+<nombre>Víctor Manuel</nombre>
+<nombre>Luisa</nombre>
+<nombre>Fernando</nombre>
+<nombre>María</nombre>
+
+6. Identificadores de todas las carreras:
+
+//alumno/@id
+
+ id="e01"
+ id="e02"
+ id="e03"
+ id="e04"
+
+7. Datos de la carrera cuyo id es c01:
+
+//carrera[@id='c01']
+
+<carrera id="c01">
+  <nombre>I.T. Informática</nombre>
+  <plan>2003</plan>
+  <creditos>250</creditos>
+  <centro>Escuela de Informática</centro>
+</carrera>
+
+8. Centro en que se estudia de la carrera cuyo id es c02:
+
+//carrera[@id='c02']/centro
+
+<centro>Facultad de Ciencias Sociales</centro>
+
+
+9. Nombre de las carreras que tengan subdirector:
+
+//subdirector/../nombre
+
+<nombre>Dipl. Relaciones Laborales</nombre>
+
+10.Nombre de los alumnos que estén haciendo proyecto:
+
+//alumno//proyecto/../../nombre
+
+<nombre>Luisa</nombre>
+<nombre>María</nombre>
+
+
+11.Códigos de las carreras en las que hay algún alumno matriculado:
+
+//alumno//carrera/@codigo
+
+ codigo="c01"
+ codigo="c02"
+ codigo="c02"
+ codigo="c01"
+
+12.Apellidos y Nombre de los alumnos con beca:
+
+//alumno[@beca]/nombre | //alumno[@beca]/apellido1 | //alumno[@beca]/apellido2
+
+<apellido1>Pérez</apellido1>
+<apellido2>Romero</apellido2>
+<nombre>Fernando</nombre>
+
+13.Nombre de las asignaturas de la titulación c04:
+
+//asignatura[@titulacion='c04']/nombre
+
+<nombre>Pedagogía</nombre>
+<nombre>Tecnología de los Alimentos</nombre>
+
+14.Nombre de las asignaturas de segundo trimestre:
+
+//asignatura[trimestre=2]/nombre
+
+<nombre>Ingeniería del Software</nombre>
+<nombre>Pedagogía</nombre>
+<nombre>Didáctica</nombre>
+<nombre>Tecnología de los Alimentos</nombre>
+<nombre>Historia del Pensamiento</nombre>
+
+15.Nombre de las asignaturas que no tienen 4 créditos teóricos:
+
+//asignatura[not(creditos_teoricos=4)]/nombre
+
+<nombre>Ofimática</nombre>
+<nombre>Ingeniería del Software</nombre>
+<nombre>Tecnología de los Alimentos</nombre>
+<nombre>Bases de Datos</nombre>
+<nombre>Historia del Pensamiento</nombre>
+
+
+16.Código de la carrera que estudia el último alumno:
+
+//alumno[last()]//carrera/@codigo
+
+ codigo="c01"
+
+17.Código de las asignaturas que estudian mujeres:
+
+//alumno[sexo='Mujer']//asignatura/@codigo
+
+ codigo="a02"
+ codigo="a01"
+ codigo="a02"
+ codigo="a01"
+ codigo="a07"
+
+
+18.Nombre de los alumnos que matriculados en la asignatura a02:
+
+//alumno[.//asignatura/@codigo='a02']/nombre
+
+<nombre>Luisa</nombre>
+<nombre>Fernando</nombre>
+<nombre>María</nombre>
+
+19.Códigos de las carreras que estudian los alumnos matriculados en alguna
+asignatura:
+
+//alumno//asignatura/../../carrera/@codigo
+
+ codigo="c01"
+ codigo="c02"
+ codigo="c02"
+ codigo="c01"
+
+20.Apellidos de todos los hombres:
+
+//alumno[sexo='Hombre']/apellido1 | //alumno[sexo='Hombre']/apellido2
+
+<apellido1>Rivas</apellido1>
+<apellido2>Santos</apellido2>
+<apellido1>Pérez</apellido1>
+<apellido2>Romero</apellido2>
+
+21.Nombre de la carrera que estudia Víctor Manuel:
+
+//carrera[@id=//alumno[nombre='Víctor Manuel']//carrera/@codigo]/nombre
+
+<nombre>I.T. Informática</nombre>
+
+22.Nombre de las asignaturas que estudia Luisa:
+
+//asignatura[@id=//alumno[nombre='Luisa']//asignatura/@codigo]/nombre
+
+<nombre>Ofimática</nombre>
+<nombre>Ingeniería del Software</nombre>
+
+23.Primer apellido de los alumnos matriculados en Ingeniería del Software:
+
+//alumno[.//asignatura/@codigo=//asignatura[nombre='Ingeniería del Software']/@id]/apellido1
+
+<apellido1>Pérez</apellido1>
+<apellido1>Pérez</apellido1>
+<apellido1>Avalón</apellido1>
+
+24.Nombre de las carreras que estudian los alumnos matriculados en la
+asignatura Tecnología de los Alimentos:
+
+//carrera[@id=//alumno[.//asignatura[@codigo=//asignatura[nombre='Tecnología de los Alimentos']/@id]]//carrera/@codigo]/nombre
+
+<nombre>I.T. Informática</nombre>
+
+25.Nombre de los alumnos matriculados en carreras que no tienen subdirector:
+
+//alumno[not (.//carrera/@codigo=//carrera[subdirector]/@codigo)]/nombre
+
+<nombre>Víctor Manuel</nombre>
+<nombre>Luisa</nombre>
+<nombre>Fernando</nombre>
+<nombre>María</nombre>
+
+
+26.Nombre de las alumnos matriculados en asignaturas con 0 créditos prácticos
+y que estudien la carrera de I.T. Informática :
+
+//alumno[.//asignatura/@codigo=//asignatura[creditos_practicos=0]/@id][.//carrera/@codigo=//carrera[nombre='I.T. Informática']/@id]/nombre
+
+<nombre>Víctor Manuel</nombre>
+
+27.Nombre de los alumnos ques estudian carreras cuyos planes son anteriores a
+2002:
+
+//alumno[.//carrera/@codigo=//carrera[not(plan>=2002)]/@id]/nombre
+
+
+<nombre>Luisa</nombre>
+<nombre>Fernando</nombre>
