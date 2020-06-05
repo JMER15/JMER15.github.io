@@ -1,0 +1,23 @@
+#img1 {
+  display: block;
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+}
+
+#img2 {
+  display: block;
+  -webkit-filter: sepia(1);
+  filter: sepia(1);
+}
+#img3 {
+  display: block;
+  -webkit-filter: sepia(1);
+  filter: sepia(1);
+}
+.inverted {
+    filter: inverted(100%)
+}
+.rotated {
+    filter: hue-rotate(200deg)
+}
+
