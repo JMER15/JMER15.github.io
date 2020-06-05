@@ -3,9 +3,6 @@ ul {
   margin: 0px;
   padding: 0px;
 }
-div {
-  box-shadow: 10px 10px;
-}
 
 li {
   display: inline-block;
@@ -14,6 +11,8 @@ li {
   background-color: #ff33fb;
   color: white;
   text-shadow: 2px 2px 4px #000000;
+  box-shadow: 10px 10px;
+}
 }
 
 a {
