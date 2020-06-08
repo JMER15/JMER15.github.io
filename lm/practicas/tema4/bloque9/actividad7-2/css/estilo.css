@@ -1,0 +1,10 @@
+body {
+  background-image: url('../img/gato.jpg');
+}
+
+.box {
+    font-size: 5vw;
+    padding: 10vw;
+    border: solid;
+    background: linear-gradient(green, transparent, red);
+}
