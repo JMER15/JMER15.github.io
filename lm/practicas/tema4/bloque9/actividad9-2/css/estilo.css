@@ -1,10 +1,8 @@
-body {
-  background-image: url('../img/gato.jpg');
-}
-
-.box {
-    font-size: 5vw;
-    padding: 10vw;
-    border: solid;
-    background: linear-gradient(green, transparent, red);
+.rotar {
+	margin:50px;
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  border: 1px solid black;
+  transform: rotate(45deg);
 }
