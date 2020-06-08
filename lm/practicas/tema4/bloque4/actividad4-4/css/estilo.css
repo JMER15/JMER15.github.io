@@ -1,29 +1,14 @@
-.box1 {
-  border: 1px solid black;
-  color: orange;
-  margin: 1px;
-  width: 450px;
-  padding: 25px;
-  margin: 25px;
-  outline: 3px solid orange;
+div {
+	background-image: url(../img/cielo.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	font-family: georgia, serif;
+	font-size: 7vw;
+	text-align: center;
+	border: solid;
 }
 
-.box2 {
-  border: 1px solid black;
-  color: orange;
-  margin: 1px;
-  width: 450px;
-  padding: 25px;
-  margin: 25px;
-  outline: 3px solid green;
-}
-
-.box3 {
-  border: 1px solid black;
-  color: orange;
-  margin: 1px;
-  width: 450px;
-  padding: 25px;
-  margin: 25px;
-  outline: 3px dotted yellow;
+.blender {
+	mix-blend-mode: difference;
+	color: yellow;
 }
