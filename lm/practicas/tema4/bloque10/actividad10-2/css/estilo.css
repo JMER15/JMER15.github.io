@@ -1,10 +1,11 @@
-body {
-  background-image: url('../img/gato.jpg');
+div {
+  width: 100px;
+  height: 100px;
+  background: purple;
+  transition: background 2s, transform 2s;
 }
 
-.box {
-    font-size: 5vw;
-    padding: 10vw;
-    border: solid;
-    background: linear-gradient(green, transparent, red);
+div:hover {
+  background: blue;
+  transform: rotate(180deg);
 }

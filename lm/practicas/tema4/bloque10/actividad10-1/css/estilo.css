@@ -1,6 +1,11 @@
-.box {
-  font-size: 5vw;
-  padding: 10vw;
-  border: solid;
-  background: repeating-radial-gradient(circle, blue 20%, green 40%);
+div {
+  width: 100px;
+  height: 100px;
+  background: purple;
+  transition: width 2s;
+  transition-timing-function: ease-in-out;
+}
+
+div:hover {
+  width: 300px;
 }
