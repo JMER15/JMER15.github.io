@@ -1,39 +1,23 @@
-.box1 {
-  border: 3px solid blue;
-  color: blue;
-  margin: 1px;
-  width: 450px;
-  padding: 25px;
-  margin: 25px;
+.blend {
+  width: 400px;
+  height: 400px;
+  background-repeat: no-repeat, repeat;
+  background-image: url("../img/blend.jpg"), url("../img/cielo.jpg");
+  background-blend-mode: color-dodge;
+  text-align: center;
+  vertical-align: top;
+  font-size: 30px;
+  color: white;
 }
 
-.box2 {
-  border: 3px solid green;
-  color: blue;
-  margin: 1px;
-  width: 450px;
-  padding: 25px;
-  margin: 25px;
-}
-
-.box3 {
-  border: 3px solid;
-  border-top-color: blue;
-  border-right-color: green;
-  border-bottom-color: red;
-  border-left-color: gray;
-  color: blue;
-  margin: 1px;
-  width: 450px;
-  padding: 25px;
-  margin: 25px;
-}
-
-.box4 {
-  border: 3px dotted yellow;
-  color: blue;
-  margin: 1px;
-  width: 450px;
-  padding: 25px;
-  margin: 25px;
+.notblend {
+  width: 400px;
+  height: 400px;
+  background-repeat: no-repeat, repeat;
+  background-image: url("../img/blend.jpg"), url("../img/cielo.jpg");
+  background-blend-mode: normal;
+  text-align: center;
+  vertical-align: top;
+  font-size: 30px;
+  color: white;
 }
