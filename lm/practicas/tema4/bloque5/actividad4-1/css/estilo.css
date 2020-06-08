@@ -1,0 +1,18 @@
+.imagen {
+  width: 200px;
+  border: 2px solid black;
+  padding: 40px;
+  margin: 30px;
+  background-image: url("../img/flores.jpg");
+  text-align: center;
+  font-size: 30px;
+}
+
+.nada {
+  width: 200px;
+  border: 2px solid black;
+  padding: 40px;
+  margin: 30px;
+  text-align: center;
+  font-size: 30px;
+}

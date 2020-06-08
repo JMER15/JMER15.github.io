@@ -1,0 +1,23 @@
+.blend {
+  width: 400px;
+  height: 400px;
+  background-repeat: no-repeat, repeat;
+  background-image: url("../img/blend.jpg"), url("../img/cielo.jpg");
+  background-blend-mode: color-dodge;
+  text-align: center;
+  vertical-align: top;
+  font-size: 30px;
+  color: white;
+}
+
+.notblend {
+  width: 400px;
+  height: 400px;
+  background-repeat: no-repeat, repeat;
+  background-image: url("../img/blend.jpg"), url("../img/cielo.jpg");
+  background-blend-mode: normal;
+  text-align: center;
+  vertical-align: top;
+  font-size: 30px;
+  color: white;
+}
