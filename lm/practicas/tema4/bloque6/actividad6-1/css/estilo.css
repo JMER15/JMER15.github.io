@@ -1,18 +1,10 @@
-.imagen {
-  width: 200px;
-  border: 2px solid black;
-  padding: 40px;
-  margin: 30px;
-  background-image: url("../img/flores.jpg");
-  text-align: center;
-  font-size: 30px;
+#neon {
+  color: white;
+  text-shadow: 3px 1px 3px green;
+  font-size: 40px;
+  padding: 30px;
 }
 
-.nada {
-  width: 200px;
-  border: 2px solid black;
-  padding: 40px;
-  margin: 30px;
-  text-align: center;
-  font-size: 30px;
+body {
+  background-color: #b8b8b8;
 }
