@@ -1,6 +1,15 @@
-.box {
-  font-size: 5vw;
-  padding: 10vw;
-  border: solid;
-  background: repeating-radial-gradient(circle, blue 20%, green 40%);
+div {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  background-color: blue;
+  animation-name: example;
+  animation-duration: 2s;
+  animation-delay: 1s;
+}
+
+@keyframes example {
+  0% {background-color: blue; left:0px;}
+  50% {background-color: yellow; left:200px;}
+  100% {background-color: blue; left:0px;}
 }
