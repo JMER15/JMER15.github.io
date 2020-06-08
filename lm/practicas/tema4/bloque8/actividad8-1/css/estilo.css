@@ -1,6 +1,28 @@
-.box {
-  font-size: 5vw;
-  padding: 10vw;
+div {
+  color: red;
+  background-color: gold;
+  font-size: 4vw;
+  padding: 2vw;
+  margin: 2vw;
   border: solid;
-  background: repeating-radial-gradient(circle, blue 20%, green 40%);
+}
+
+.contrast {
+  filter: contrast(100);
+}
+
+.brightness {
+  filter: brightness(50%);
+}
+
+.inverted {
+  filter: invert(100%);
+}
+
+.rotated {
+  filter: hue-rotate(200deg);
+}
+
+.grayscale {
+  filter: grayscale;
 }
