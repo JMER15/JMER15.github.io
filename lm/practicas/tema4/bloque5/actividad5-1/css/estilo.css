@@ -1,18 +1,31 @@
-.imagen {
-  width: 200px;
-  border: 2px solid black;
-  padding: 40px;
-  margin: 30px;
-  background-image: url("../img/flores.jpg");
-  text-align: center;
-  font-size: 30px;
+.box1{
+  border: 3px ridge;
+  margin: 1vw;
+  width: 450px;
+  padding: 25px;
+  margin: 25px;
 }
 
-.nada {
-  width: 200px;
-  border: 2px solid black;
-  padding: 40px;
-  margin: 30px;
-  text-align: center;
-  font-size: 30px;
+.box2{
+  border: 3px outset;
+  margin: 1vw;
+  width: 450px;
+  padding: 25px;
+  margin: 25px;
+}
+
+.box3{
+  border: 3px groove;
+  margin: 1vw;
+  width: 450px;
+  padding: 25px;
+  margin: 25px;
+}
+
+.box4{
+  border: 3px dashed;
+  margin: 1vw;
+  width: 450px;
+  padding: 25px;
+  margin: 25px;
 }
