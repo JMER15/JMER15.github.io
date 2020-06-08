@@ -1,5 +1,10 @@
-.estrella {
-  background-image: url("../img/estrella.jpg");
-  background-repeat: no-repeat;
-  background-size: 150px;
+body {
+  background-image: url('../img/perro.jpg');
+}
+
+.box {
+    font-size: 5vw;
+    padding: 10vw;
+    border: solid;
+    background: linear-gradient(green, transparent, red);
 }
