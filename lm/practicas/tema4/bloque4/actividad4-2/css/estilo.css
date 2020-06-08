@@ -1,7 +1,5 @@
-.box {
-  background-color: gold;
-  font-size: 5vw;
-  padding: 10vw;
-  margin: 5vw;
-  border: solid;
+.estrella {
+  background-image: url("../img/estrella.png");
+  background-repeat: no-repeat;
+  background-size: 150px;
 }
