@@ -1,3 +1,7 @@
-h1 {
-  text-align: center;
+.box {
+  background-color: gold;
+  font-size: 5vw;
+  padding: 10vw;
+  margin: 5vw;
+  border: solid;
 }
