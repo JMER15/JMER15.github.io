@@ -1,39 +1,7 @@
-.box1 {
-  border: 3px solid blue;
-  color: blue;
-  margin: 1px;
-  width: 450px;
-  padding: 25px;
-  margin: 25px;
-}
-
-.box2 {
-  border: 3px solid green;
-  color: blue;
-  margin: 1px;
-  width: 450px;
-  padding: 25px;
-  margin: 25px;
-}
-
-.box3 {
-  border: 3px solid;
-  border-top-color: blue;
-  border-right-color: green;
-  border-bottom-color: red;
-  border-left-color: gray;
-  color: blue;
-  margin: 1px;
-  width: 450px;
-  padding: 25px;
-  margin: 25px;
-}
-
-.box4 {
-  border: 3px dotted yellow;
-  color: blue;
-  margin: 1px;
-  width: 450px;
-  padding: 25px;
-  margin: 25px;
+input {
+  caret-color: orange;
+  color: white;
+  background: black;
+  font-size: 7vw;
+  padding: 3vw;
 }
