@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="viaje_por_el_mundo.xsl"?>
+<mundo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="viaje_por_el_mundo.xsd">
+<viaje>
+<etapa id="1">
+<fecha_inicio>13-06-2020</fecha_inicio>
+<origen>Obejo</origen>
+<destino>Córdoba</destino>
+<fecha_fin>14-06-2020</fecha_fin>
+<transporte>coche</transporte>
+<monumento>Mezquita</monumento>
+<diario>Hemos llegado y nos lo hemos pasado bien</diario>
+<foto>img/foto1.jpg</foto>
+</etapa>
+
+
+<etapa id="2">
+<fecha_inicio>15-06-2020</fecha_inicio>
+<origen>Córdoba</origen>
+<destino>Madrid</destino>
+<fecha_fin>16-06-2020</fecha_fin>
+<transporte>tren</transporte>
+<monumento>Bernabeu</monumento>
+<diario>Hemos conocido a CR7 siuuuuuuuuuuuuuuuuuuu</diario>
+<foto>img/foto2.jpg</foto>
+</etapa>
+
+<etapa id="3">
+<fecha_inicio>17-06-2020</fecha_inicio>
+<origen>Madrid</origen>
+<destino>Roma</destino>
+<fecha_fin>18-06-2020</fecha_fin>
+<transporte>avion</transporte>
+<monumento>Coliseo Romano</monumento>
+<diario>Hemos dado una vuelta por el panteón y el coliseo</diario>
+<foto>img/foto3.jpg</foto>
+</etapa>
+
+<etapa id="4">
+<fecha_inicio>19-06-2020</fecha_inicio>
+<origen>Roma</origen>
+<destino>Rusia</destino>
+<fecha_fin>20-06-2020</fecha_fin>
+<transporte>avion</transporte>
+<monumento>Plaza Roja</monumento>
+<diario>Se está muy fresquito aquí</diario>
+<foto>img/foto4.jpg</foto>
+</etapa>
+
+<etapa id="5">
+<fecha_inicio>21-06-2020</fecha_inicio>
+<origen>Rusia</origen>
+<destino>Japón</destino>
+<fecha_fin>25-06-2020</fecha_fin>
+<transporte>avion</transporte>
+<monumento>Cultura Tecnológica y videojuegos </monumento>
+<diario>Ha sido impresionante</diario>
+<foto>img/foto5.jpg</foto>
+</etapa>
+
+<etapa id="6">
+<fecha_inicio>26-06-2020</fecha_inicio>
+<origen>Japón</origen>
+<destino>California</destino>
+<fecha_fin>29-06-2020</fecha_fin>
+<transporte>avion</transporte>
+<monumento>Vaciones </monumento>
+<diario>Diitas de relax</diario>
+<foto>img/foto6.jpg</foto>
+</etapa>
+
+<etapa id="7">
+<fecha_inicio>30-06-2020</fecha_inicio>
+<origen>California</origen>
+<destino>EEUU</destino>
+<fecha_fin>03-07-2020</fecha_fin>
+<transporte>coche</transporte>
+<monumento>Casa Blanca</monumento>
+<diario>Ver la casa blanca y sus misterios</diario>
+<foto>img/foto7.jpg</foto>
+</etapa>
+
+<etapa id="8">
+<fecha_inicio>04-07-2020</fecha_inicio>
+<origen>EEUU</origen>
+<destino>India</destino>
+<fecha_fin>10-07-2020</fecha_fin>
+<transporte>avion</transporte>
+<monumento>Taj Mahal</monumento>
+<diario>Ver Mausoleo</diario>
+<foto>img/foto8.jpg</foto>
+</etapa>
+
+
+<etapa id="9">
+<fecha_inicio>11-07-2020</fecha_inicio>
+<origen>India</origen>
+<destino>Yucatán</destino>
+<fecha_fin>15-07-2020</fecha_fin>
+<transporte>avion</transporte>
+<monumento>Ruinas Maya</monumento>
+<diario>Me encantan y he sacado muchas fotos</diario>
+<foto>img/foto9.jpg</foto>
+</etapa>
+
+<etapa id="10">
+<fecha_inicio>16-07-2020</fecha_inicio>
+<origen>Yucatán</origen>
+<destino>Argentina</destino>
+<fecha_fin>21-07-2020</fecha_fin>
+<transporte>avion</transporte>
+<monumento>Glaciar perito Moreno</monumento>
+<diario>Intentaremos conocer el lugar donde nació Messi</diario>
+<foto>img/foto10.jpg</foto>
+</etapa>
+
+<etapa id="11">
+<fecha_inicio>22-07-2020</fecha_inicio>
+<origen>Argentina</origen>
+<destino>Egipto</destino>
+<fecha_fin>26-07-2020</fecha_fin>
+<transporte>avion</transporte>
+<monumento>Pirámides Egipcias</monumento>
+<diario>Conocer cultara Egipcia</diario>
+<foto>img/foto11.jpg</foto>
+</etapa>
+
+<etapa id="12">
+<fecha_inicio>27-07-2020</fecha_inicio>
+<origen>Egipto</origen>
+<destino>Fin de las vaciones</destino>
+<fecha_fin>31-07-2020</fecha_fin>
+<transporte>avion</transporte>
+<monumento>Ninguno</monumento>
+<diario>Se acabó hasta el año que viene </diario>
+<foto>img/foto12.jpg</foto>
+</etapa>
+</viaje>
+</mundo>
