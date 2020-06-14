@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="mundo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="viaje">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="etapa" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="fecha_inicio"/>
+                    <xs:element type="xs:string" name="origen"/>
+                    <xs:element type="xs:string" name="destino"/>
+                    <xs:element type="xs:string" name="fecha_fin"/>
+                    <xs:element type="xs:string" name="transporte"/>
+                    <xs:element type="xs:string" name="monumento"/>
+                    <xs:element type="xs:string" name="diario"/>
+                    <xs:element type="xs:string" name="foto"/>
+                  </xs:sequence>
+                  <xs:attribute name="id" type="xs:integer" use="required"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
